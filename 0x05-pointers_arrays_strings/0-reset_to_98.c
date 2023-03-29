@@ -1,24 +1,13 @@
-#include"main.h"
-
 /**
- * print_array - prints n elements of an array of integers.
+ * reset_to_98 - takes a pointer to an int parameter
+ *               and updates the value it points to 98
  *
- * @n: elements parameter input
- * @a: string parameter input
+ * @n: int parameter
  *
  * Return: Nothing
-*/
+ */
 
-void print_array(int *a, int n)
+void reset_to_98(int *n)
 {
-	int i;
-
-	for (i = 0; i < n; ++i)
-	{
-		if (i != (n - 1))
-			printf("%d, ", a[i]);
-		else
-			printf("%d", a[i]);
-	}
-	printf("\n");
+	*n = 98;
 }
